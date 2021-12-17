@@ -32,4 +32,17 @@ class ArrayHandle
     {
         foreach (int num in arr) Console.Write($"{num} ");
     }
+
+    public int ArrayAlmostSorted(int[] checkArr, int[] resultArr)
+    {
+        int numsInOrder = 0;
+        for (int i = 0; i < checkArr.Length; i++)
+        {
+            if (checkArr[i] == resultArr[i]) numsInOrder++;
+        }
+
+        if (numsInOrder == checkArr.Length - 2)
+            return 1;
+        else return 0;
+    }
 }
