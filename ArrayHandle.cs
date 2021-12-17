@@ -43,6 +43,7 @@ class ArrayHandle
 
         if (numsInOrder == checkArr.Length - 2)
             return 1;
-        else return 0;
+        else
+            return 0;
     }
 }
