@@ -28,11 +28,6 @@ class ArrayHandle
         return true;
     }
 
-    public void PrintArray(int[] arr)
-    {
-        foreach (int num in arr) Console.Write($"{num} ");
-    }
-
     public int ArrayAlmostSorted(int[] checkArr, int[] resultArr)
     {
         int numsInOrder = 0;
@@ -45,5 +40,10 @@ class ArrayHandle
             return 1;
         else
             return 0;
+    }
+
+    public void PrintArray(int[] arr)
+    {
+        foreach (int num in arr) Console.Write($"{num} ");
     }
 }
